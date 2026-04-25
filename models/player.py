@@ -38,7 +38,7 @@ class Player:
             if card in self.groups[name]:
                 self.groups[name].remove(card)
         if card not in self.hand:
-                self.hand.append(card)
+            self.hand.append(card)
 
     def deadwood_val(self):
         return sum(card.point_val for card in self.hand)
